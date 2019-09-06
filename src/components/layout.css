@@ -1,12 +1,18 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: 'Open Sans', sans-serif !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.64;
+}
+h1, h2, h3, h4, h5, h6, strong, b {
+    font-weight: 300px;
 }
 article,
 aside,
@@ -482,7 +488,7 @@ hr {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
+  /*background: hsla(0, 0%, 0%, 0.2);*/
   border: none;
   height: 1px;
 }
@@ -509,7 +515,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
+  /*margin-bottom: calc(1.45rem / 2);*/
 }
 ol li {
   padding-left: 0;
