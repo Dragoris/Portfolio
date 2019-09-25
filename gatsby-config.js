@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    author: `Matthew Trower`,
+    title: `Matt Trower`,
+    description: `Personal Portfolio`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,8 +24,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `images/warriors-alt.png`, // This path is relative to the root of the site.
+        icon: `src/images/warriors-alt.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

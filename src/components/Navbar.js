@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from "react"
 import styled from 'styled-components';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import Image from './Image'
 
 
 const Navbar = () => {
 
-
-    const height = window.innerHeight
     const [scrollY, setScrollY] = useState(false);
     const [hovered, setHovered] = useState(false); 
 
     function check() {
-        if (window.pageYOffset + 65 >= height ) setScrollY(true)
+        if (window.pageYOffset + 65 >= window.innerHeight ) setScrollY(true)
         else setScrollY(false)
         
     }
@@ -29,13 +27,6 @@ const Navbar = () => {
           window.removeEventListener("scroll", check);
         };
     });
-
-    const style = {
-        height: '48px',
-        width: '48px',
-        position: 'absolute',
-        display: (hovered ? 'block' : 'none')
-    }
 
     function handleHover(bool){
         setTimeout(function(){

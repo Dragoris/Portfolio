@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image'
 import { StaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import { bounce } from '../styles/KeyFrames';
 

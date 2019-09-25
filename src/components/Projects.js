@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Container from './Container'
@@ -8,10 +8,6 @@ import Heading from './Heading'
 import Break from './Break'
 import Image from './Image'
 import CodaVideo from '../images/coda-video.mp4'
-
-const BGContainer = styled(Container)`
-	background-color: #F3EFE0;
-`
 
 const Effect = styled.figure`
     position: relative;
@@ -145,15 +141,15 @@ const Showcase = (props) => (
 		</StyledVideo>
 		<ShowcaseP >
 			I developed the front-end for a single page application that allows users to navigate the city entitlement process 
-			and get their construction project apprpved faster. After searching for an address 
-			users are walked through a workflow to customize their project and recieve all relevent zoning, 
-			regulatory, and building code information, as well as a gnatt chart of their project's time to completion.
+			and get their construction project approved faster. After searching for an address 
+			users are walked through a workflow to customize their project and receive all relevant zoning, 
+			regulatory, and building code information, as well as a gantt chart of their project's time to completion.
 			<br/>
-			Other features include a Map with toggelable zoning layers and elevation information and 
-			a 'Turbo-Tax' style set of dynamic questions that determin which Due Diligence requirements apply
+			Other features include a Map with toggleable zoning layers and elevation information and 
+			a 'Turbo-Tax' style set of dynamic questions that determine which Due Diligence requirements apply
 			and provides all of the needed forms.
 			<br/><br/>
-			<strong>Skills: </strong> Javascript, jQuery, Bootstrap, HTML, CSS, Google Maps APIs
+			<strong>Skills: </strong> Javascript, jQuery, Bootstrap, Google Maps APIs
 
 
 		</ShowcaseP>
@@ -174,7 +170,7 @@ const Projects = () => (
 			/>
 			<Project 
 				title="Risk Assessment Demo"
-				text="Uses dynamic charts and tables to illistrate political donations to council members and where they come from."
+				text="Uses dynamic charts and tables to illustrate political donations to council members and where they come from."
 				link="https://entitlementrisk.com/peoplepermits/people/"
 				filename="people.PNG"
 				skills="React, Redux, Bootstrap, Chart.js"

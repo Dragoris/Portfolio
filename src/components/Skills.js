@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import Plx from 'react-plx'
+
 import Container from './Container'
-import Flex from './Flex'
 import Heading from './Heading'
 import Break from './Break'
 import Image from './Image'
-
-import Plx from 'react-plx'
 
 const Explosion = styled.div`
 	height: 24rem;
@@ -54,7 +53,7 @@ for (let i = 0; i < ROWS; i++) {
     const yFactor = top ? -1 : 1;
     const left = j < BOXES_PER_ROW / 2;
     const xFactor = left ? -1 : 1;
-    const inside = (i === 1 || i === 2) && (j === 1 || j === 2); // I was lazy to write generic formula
+    const inside = (i === 1 || i === 2) && (j === 1 || j === 2); 
     const scaleFactor = inside ? 0.5 : 1;
     const start = inside ? 40 : 100;
     const offset = inside ? 40 : 100;
@@ -112,7 +111,7 @@ const renderBoxes = () => {
     BOXES.forEach((row, index) => {
       row.forEach((box, boxIndex) => {
       	const icon = box.icon
-      	const margin = (icon === 'Github' || icon === 'Gatsby' || icon === 'Redux'? '5px' : '0px')
+      	const margin = (icon === 'Github' || icon === 'Gatsby' || icon === 'Redux' ? '5px' : '0px')
 
         boxes.push(
           <ExplosionBox

@@ -1,16 +1,12 @@
 import React from "react"
+import "../styles/layout.css"
 
-import Landing from "./Landing"
-import "./layout.css"
-
-const Layout = () => {
+const Layout = ({ children }) => {
 
   return (
-    <>
-      <Landing />
-
-
-    </>
+    <React.Fragment>
+      {children}
+    </React.Fragment>
   )
 }
 

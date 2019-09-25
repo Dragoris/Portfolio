@@ -7,6 +7,7 @@ import Break from './Break'
 import Container from './Container'
 import Flex from './Flex'
 import Heading from './Heading'
+import resume from '../images/resume.pdf'
 
 
 const Column = styled.div`
@@ -61,19 +62,21 @@ const Profile = () => (
         <Column>
           <Heading h2>About me</Heading>
           <p>
-            Hi! I'm Matt, a front-end developer that loves to find creative solutions to complex problems. I am currently working at Coda Compliance, where we are automating the building entitlement process. <br /> When I'm not coding you'll find me on the basketball court or backpacking through the wilderness for days on end.
+            Hi! I'm Matt, a front-end developer that loves to find creative solutions to complex problems. 
+            I am currently working at Coda Compliance developing an application that automates the entitlement process for building developers and architects. 
+            <br /> When I'm not coding, you'll find me on the basketball court or backpacking through the wilderness with my dog, Banksy.
           </p>
         </Column>
       </DetailsFlex>
       <Flex justifyAround>
         <HoverFlex alignCenter>
-          <Link target="_blank" href="https://www.linkedin.com/in/matthew-trower/">
+          <Link target="_blank" href="https://www.linkedin.com/in/matthew-trower/" rel="noopener">
             <FontAwesomeIcon style={{marginRight: '10px'}} size="2x" icon={['fab', 'linkedin']} />
             LinkedIn
           </Link>
         </HoverFlex>
         <HoverFlex alignCenter>
-          <Link target="_blank" href="https://github.com/Dragoris">
+          <Link target="_blank" href="https://github.com/Dragoris" rel="noopener">
             <FontAwesomeIcon style={{marginRight: '10px'}} size="2x" icon={['fab', 'github-square']} />
             Github
           </Link>
@@ -85,7 +88,7 @@ const Profile = () => (
           </Link>
         </HoverFlex>
         <HoverFlex alignCenter>
-          <Link target="_blank">
+          <Link target="_blank" href="https://www.visualcv.com/mtrower/">
             <FontAwesomeIcon style={{marginRight: '10px'}} size="2x" icon={['far', 'file-pdf']} />
             Resume
           </Link>
